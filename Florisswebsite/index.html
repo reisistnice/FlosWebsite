@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/icon2.png" />
+  <title>Flo's Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+    body {font-family: 'Nunito Sans', sans-serif;}
+</style>
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  <div class="wrapper">
+    <section id="personalien">
+      <div class="title">
+        <a href="index.html"><h2>Flo's eigene Webseite</h2></a>
+        <div class="personalien">
+
+        <div class="container">
+            <span class="text first-text">I'm </span>
+            <span class="text sec-text">Floris Le </span>
+          </div>
+          <p>Hallo! Mein Name ist Floris Le und ich gehe momentan in die 2. Sekundarschule in Niederrohrdorf, Aargau. Ich bin 14 Jahre alt und interessiere mich extrem für Informatik.
+            Da ich mehr über den Beruf Informatik wissen möchte und auch bereit bin mich dafür einzusetzen, will ich eine Lehre als Informatiker machen. Ich habe einen Kurs absolviert, bei dem ich eine Webseite mit der Programmiersprache HTML gebaut habe. Diese schauen Sie gerade an.
+            Bitte nehmen Sie sich Zeit, um meine Webseite anzuschauen.</p>
+          <h3>Personalien</h3>
+          <p>Hofacherstrasse 10a</p>
+          <p>5443 Niederrohrdorf</p>
+          <p><a  href="mailto:floris.le@ksrb.ch">
+          <span style="font:#00ffff;">floris.le@ksrb.ch</span></p> </a>
+        </div>
+    </div>
+    <img class="portrait_img" src="img/florisle.JPG" alt="Floris Le">
+
+<script>
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+        setTimeout(()  => {
+          text.textContent = "Floris Minh-Tri Le."
+    }, 0);
+        setTimeout(()  => {
+          text.textContent = "a hobby programmer."
+    }, 4000);
+        setTimeout(()  => {
+          text.textContent = "a hobby photographer."
+}, 8000);
+  }
+  textLoad();
+  setInterval(textLoad, 12000);
+</script>
+    </section>
+
+    <section id="hobbys">
+      <div class="hobbytext">
+        <h1>Meine Hobbys</h1>
+        <p> Ich selber habe ziemlich viele Hobbys. Ich gehe in ein Badminton Verein und ein Schiessverein, gehe aber auch gerne Biken mit meinen Kollegen.
+          <br> Auch beschäftige ich mich gerne mit der Kunst der Fotografie, Mininatur (z.B Modellfliegen), mit dem Flugsimulator fliegen und mit meinem E-Scooter fahren.
+          <br> Ausserdem sitze ich gerne am Computer und mache dabei immer was spannendes
+          z.B GTA modifzieren mit Open IV.</p>
+      </div>
+      <figure class="hobby_wrapper">
+        <img class="hobby_img" src="img/fotografieren.jpg" alt="fotografieren">
+        <img class="hobby_img" src="img/openIV.jpg" alt="openIV">
+        <img class="hobby_img" src="img/badminton.jpg" alt="badminton spielen">
+      </figure>
+    </section>
+
+    <section id="arbeiten">
+      <h1 class="arbeiten">Meine Arbeiten</h1>
+      <div class="auftraege">
+        <div class="auftrag">
+          <div class="auftrag-text">
+            <h3>Eigenes Spiel mit Javascript</h3>
+            <p> Zum Spielen bitte auf das Bild klicken!</p>
+          </div>
+          <div class="content">
+          <a href="https://floris-le-jumping.netlify.app/"> <img class="reaktion_img" src="img/ReactionGame.JPG" alt="reaktionsspiel"></a>
+          <div id="game">
+          </div>
+            <script src="js/game.js"></script>
+          </img>
+          </div>
+        </div>
+        <div class="auftrag">
+          <div class="auftrag-text">
+            <h3>Premiere Pro Auftrag: Video</h3>
+            <p>Oh ja. Ich liebe Stock Videos.</p>
+          </div>
+        <div>
+      </div>
+        <div class="content">
+            <video class="video" src="video/Werbespot_Floris.mp4" controls>
+              Ihr Browser kann dieses Video wiedergeben.<br/>
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <section id="hobbys">
+    <div class="hobbytext">
+      <h1>Interessiert?</h1>
+      <p> Dann klicken Sie bitte auf das "i" unten! </p>
+      <section id="linktree">
+        <div class="linktree">
+            <p><a class ="linktree" href="https://linktr.ee/flosbewerbungsunterlagen"> <img src="img/hier.png" alt="bewerbungsunterlagen"> </p></a>
+          </div>
+    </div>
+
+  <footer>
+
+    </a>
+    </div>
+    <a class="icon" href="https://www.instagram.com/florisdays/">
+      <img src="img/instagram.svg" alt="florisdays Instagram">
+    </a>
+    <a class="icon" href="https://www.facebook.com/floris.le.33/">
+      <img src="img/facebook.svg" alt="florisdays Facebook">
+    </a>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>

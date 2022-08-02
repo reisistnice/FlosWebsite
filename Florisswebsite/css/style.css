@@ -1,0 +1,298 @@
+html, body {
+	margin: 0px;
+	display: block;
+	font-family: 'Nunito Sans', sans-serif; /*Hier kannst du die Schriftart ersetzen*/
+	max-width: 100%;
+	overflow-x: hidden;
+	background: rgb(251, 252, 252 , 0.3);
+	box-sizing: border-box;
+}
+
+.wrapper {
+	text-align: left;
+}
+
+/* 	Mit h1, h2 und h3 bearbeitest du die Überschriften */
+h1 {
+	font-size: 85px; /* Schriftgrösse */
+	color: black; /* Schriftfarbe*/
+	margin-bottom: 22px; /*Abstand von unten*/
+}
+
+h2 {
+	margin-top: 30px; /*Abstand von oben*/
+	margin-bottom: 0px;
+	font-size: 25px;
+	color: #575757; /* Schriftfarbe*/
+}
+
+h3 {
+	font-size: 30px; /* Grösse der Schrift*/
+	color: black; /* Schriftfarbe*/
+	margin-bottom: 8px;
+}
+
+/* 	p ist ein Paragraph. Auch dort kannst du mit den gleichen Eigenschaften (font-size, color etc.) die Schrift und Abstände bearbeiten.*/
+p {
+	margin: 0;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+/* 	a ist das Tag für Links. Mit text-decoration: none; kannst du den blauen Unterstrich liminieren.*/
+a {
+	text-decoration: none;
+	color: #51;
+}
+
+.container{
+overflow: hidden;
+
+}
+
+.container .text{
+		position: relative;
+		font-size: 60px; /* Schriftgrösse */
+		color: black; /* Schriftfarbe*/
+		margin-bottom: 22px;
+}
+
+.container .text.sec-text:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #FBFCFC;
+		animation: animate 4s steps(13) infinite;
+		border-left: 2px solid #4070F4
+/*	background-color: #FBFCFC; */
+
+
+}
+
+@keyframes animate{
+		40%, 60%{
+			left: calc(100% + 4px);
+}
+		100%{
+			left: 0%;
+		}
+
+}
+
+
+#personalien {
+	display: flex;
+	height: 100vh;
+	margin-left: 90px; /*Abstand von links*/
+	margin-bottom: 150px;
+}
+
+#personalien {
+	margin-left: 90px;
+	color: black;
+}
+
+.personalien {
+	width: 50vw;
+	height: calc(100vh - 156px);
+	padding-right: 40px;
+	padding-bottom: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.personalien {
+	margin-top: 75px;
+}
+
+.portrait_img {
+	height: 100vh;
+	width: 50%;
+	object-fit: cover;
+
+}
+
+
+#hobbys {
+	margin-bottom: 150px;
+}
+
+.hobbytext {
+	margin-left: 90px;
+}
+
+.hobby_wrapper {
+	margin-top: 100px;
+	margin-left: 90px;
+	margin-right: 90px; /*Abstand von rechts*/
+	display: flex;
+	justify-content: space-between;
+	object-position: center;
+
+}
+
+.hobby_img {
+	width: 550px;
+	height: 550px;
+	object-fit: cover;
+}
+
+
+#arbeiten {
+	margin-bottom: 300px;
+}
+
+.arbeiten {
+	margin-left: 90px;
+}
+
+.auftraege {
+	margin-left: 90px;
+	margin-right: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.auftrag {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 720px;
+	height: 520px;
+	justify-content: space-between;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	margin: 60px;
+	background: #fff;
+}
+
+.auftrag:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.auftrag-text {
+	height: 40%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+.content {
+	width: 100%;
+	height: 60%;
+}
+
+.reaktion_img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.video {
+	position: absolute;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;  object-fit: cover;
+}
+
+/* 	Der footer bezeichnet den untersten Teil deiner Webseite */
+footer {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.linktree {
+	margin-left: 60px;
+	margin-top: 15px;
+	width: 30px;
+}
+
+.icon {
+	margin-right: 10px;
+	margin-top: 15px;
+	width: 35px;
+}
+
+.line {
+	border-left: 2px solid #575757;
+	opacity: 0.8;
+	height: 40px;
+	margin-left: 60px;
+	margin-top: 13px;
+	margin-right: 60px;
+}
+
+.logo {
+	height: 60px;
+}
+
+
+
+
+/* Auf Bildschirmen, die 1860px oder weniger breit sind, werden die Bilder kleiner angezeigt */
+@media screen and (max-width: 1860px) {
+  .hobby_img {
+		width: 500px;
+		height: 500px;
+  }
+
+	.portrait_img {
+		height: 100vh;
+		width: 50%;
+		object-fit: cover;
+
+	}
+
+}
+
+/* Auf Bildschirmen, die 1460px oder weniger breit sind, werden die Bilder noch kleiner angezeigt */
+@media screen and (max-width: 1460px) {
+  .hobby_img {
+		width: 100px;
+		height: 100px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .hobby_img {
+		width: 200px;
+		height: 200px;
+  }
+
+	.portrait_img {
+		height: 100vh;
+		width: 50%;
+		object-fit: cover;
+
+	}
+
+	h1 {
+		font-size: 8px; /* Schriftgrösse */
+		color: black; /* Schriftfarbe*/
+		margin-bottom: 8px; /*Abstand von unten*/
+	}
+
+	h2 {
+		margin-top: 8px; /*Abstand von oben*/
+		margin-bottom: 0px;
+		font-size: 8px;
+		color: #575757; /* Schriftfarbe*/
+	}
+
+	h3 {
+		font-size: 8px; /* Grösse der Schrift*/
+		color: black; /* Schriftfarbe*/
+		margin-bottom: 4px;
+	}
+
+}
